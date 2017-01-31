@@ -1,0 +1,8 @@
+Feature: Test facebook smoke scenario
+
+  Scenario: Test login with unvalid credentials              # API.feature:3
+    Given account_id number 221                              # StatsSteps.accountIdNumber(String)
+    And date_from is 2016-07-01T00:00:00                     # StatsSteps.dateFromIs(String)
+    And date_to is 2017-07-01T00:00:00                       # StatsSteps.dateToIs(String)
+    When call the stats service                              # StatsSteps.callTheStatsService()
+    Then the server should handle it and return a 200 status # StatsSteps.the_server_should_handle_it_and_return_a_status(int)
