@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public abstract class Requester {
 
-    private static final String BASEURL = "http://10.100.1.82:8082/api/v3/stats";
+    private static final String BASEURL = "baseurl";
 
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
