@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public abstract class Requester {
 
-    private static final String BASEURL = "baseurl";
+    private static final String BASEURL = "BASEURL A RENSEIGNER";
 
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
