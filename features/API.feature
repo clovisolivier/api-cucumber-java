@@ -1,8 +1,11 @@
 Feature: Test facebook smoke scenario
 
-  Scenario: Test login with unvalid credentials
-    Given account_id number 221
-    And date_from is 2016-07-01T00:00:00
-    And date_to is 2017-07-01T00:00:00
-    When call the stats service
-    Then the server should handle it and return a 200 status
+  Scenario: Account_id is obligatory
+    Given I want to set "London" in param "q"
+      When I call the weather WS
+      Then status code should be 401
+      
+        Scenario: Account_id is obligatory
+    Given I want to set "London" in param "q"
+      When I call the weather WS
+      Then status code should be 400

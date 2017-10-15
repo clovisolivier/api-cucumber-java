@@ -1,3 +1,5 @@
+package services;
+
 import org.apache.http.message.BasicNameValuePair;
 
 /**
@@ -7,7 +9,7 @@ import org.apache.http.message.BasicNameValuePair;
 /**
  * Object used to call service Stats
  */
-public class Stats extends Requester {
+public class Weather extends Requester {
 
     /**
      * Path of the service
@@ -17,16 +19,16 @@ public class Stats extends Requester {
     /**
      * Constructor
      */
-    public Stats(){
+    public Weather(){
         super(PATH);
     }
 
     /**
-     * Add param account_id
-     * @param account_id
+     * Add param Q
+     * @param Q
      */
-    public void AddParamAccountId(String account_id){
-        params.add(new BasicNameValuePair("account_id",account_id));
+    public void AddValueInParam(String param, String value){
+        params.add(new BasicNameValuePair(param, value));
     }
 
     /**

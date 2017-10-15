@@ -1,3 +1,4 @@
+
 import cucumber.api.CucumberOptions;
 import org.junit.runner.RunWith;
 import cucumber.api.junit.Cucumber;
@@ -8,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features={"features"},
-        plugin={"html:target/cucumber-html-report","json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
-        "usage:target/cucumber-usage.json","junit:target/cucumber-results.xml"}
+        plugin={"html:target/result/cucumber-html-report","json:target/result/cucumber.json", "pretty:target/result/cucumber-pretty.txt",
+        "usage:target/result/cucumber-usage.json","junit:target/result/cucumber-results.xml"}
     )
 
 public class TestRunner {

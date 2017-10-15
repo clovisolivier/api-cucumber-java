@@ -1,3 +1,5 @@
+package services;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpGet;
@@ -17,7 +19,7 @@ import java.util.Scanner;
  */
 public abstract class Requester {
 
-    private static final String BASEURL = "BASEURL A RENSEIGNER";
+    private static final String BASEURL = "http://openweathermap.org/data";
 
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
