@@ -15,9 +15,6 @@ Running test
 
 Right Click on TestRunner class and Click Run As  > JUnit Test
 
-or 
-
-mvn clean install
 
 Result
 ------
