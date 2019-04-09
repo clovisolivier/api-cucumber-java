@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
         plugin={"html:target/result/cucumber-html-report","json:target/result/cucumber.json", "pretty:target/result/cucumber-pretty.txt",
-        "usage:target/result/cucumber-usage.json","junit:target/result/cucumber-results.xml"}
+        "usage:target/result/cucumber-usage.json","junit:target/result/cucumber-results.xml"},
+	glue="stepDefinition"
     )
 
 public class TestRunner {
